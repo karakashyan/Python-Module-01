@@ -29,7 +29,8 @@ class Plant:
         return self._days
 
     def show(self) -> None:
-        print(f"{self._name}: {round(self._height, 1)}cm, {self._days} days old")
+        print(f"{self._name}: {round(self._height, 1)}cm, "
+              f"{self._days} days old")
 
 
 if __name__ == "__main__":
@@ -37,13 +38,16 @@ if __name__ == "__main__":
     rose = Plant("Rose", 15.0, 10)
     print("Plant created: ", end="")
     rose.show()
+    print()
     rose.set_height(25.0)
     print(f"Height updated: {int(rose.get_height())}cm")
     rose.set_age(30)
     print(f"Age updated: {rose.get_age()} days")
+    print()
     rose.set_height(-5.0)
     print("Height update rejected")
     rose.set_age(-1)
     print("Age update rejected")
+    print()
     print("Current state: ", end="")
     rose.show()

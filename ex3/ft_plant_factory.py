@@ -11,7 +11,8 @@ class Plant:
         self.days += 1
 
     def show(self) -> None:
-        print(f"Created: {self.name}: {round(self.height, 1)}cm, {self.days} days old")
+        print(f"Created: {self.name}: {round(self.height, 1)}cm, "
+              f"{self.days} days old")
 
 
 if __name__ == "__main__":
